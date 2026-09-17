@@ -1,0 +1,9 @@
+{
+  "mcpServers": {
+    "astra-ops-hub": {
+      "command": "python",
+      "args": ["-m", "astra_ops.mcp_server"],
+      "cwd": "/absolute/path/to/astra-ops-hub"
+    }
+  }
+}
