@@ -1,0 +1,19 @@
+[project]
+name = "astra-ops-hub"
+version = "1.0.0"
+description = "19 publishable Astra agentic business use-case engines with MCP orchestration, memory evolution, and approval gates."
+readme = "README.md"
+requires-python = ">=3.11"
+authors = [{ name = "Carl Hammond" }]
+license = { text = "MIT" }
+dependencies = []
+
+[project.scripts]
+astra-ops = "astra_ops.cli:main"
+
+[project.optional-dependencies]
+dev = ["pytest>=8.0"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]
