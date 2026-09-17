@@ -1,0 +1,74 @@
+{
+  "company": "Northlamp Commerce",
+  "systems": ["crm", "commerce", "support", "hr", "finance", "inventory", "shipping", "analytics", "git"],
+  "customers": [
+    {"id": "C-1001", "name": "Mara Chen", "email": "mara@acre.example", "tier": "enterprise", "account_id": "A-88"},
+    {"id": "C-1002", "name": "Jonah Pell", "email": "jonah@pell.example", "tier": "smb", "account_id": "A-12"}
+  ],
+  "accounts": [
+    {"id": "A-88", "name": "Acre Analytics", "domain": "acre.example", "employees": 420, "industry": "B2B SaaS", "arr": 180000, "owner": "s.reid"},
+    {"id": "A-12", "name": "Pell Studio", "domain": "pell.example", "employees": 11, "industry": "Design", "arr": 9000, "owner": "unassigned"}
+  ],
+  "leads": [
+    {"id": "L-77", "company": "Harbor Grid", "domain": "harborgrid.example", "employees": 210, "industry": "Energy software", "source": "webinar", "budget_signal": "RFx open", "contact": "Priya Shah"}
+  ],
+  "orders": [
+    {"id": "ORD-4401", "customer_id": "C-1001", "items": ["NL-Desk-Pro"], "paid": true, "payment_id": "PAY-9", "shipped": true, "tracking": "1Z999AA101", "status": "in_transit", "promised": "2026-09-10", "today": "2026-09-17"},
+    {"id": "ORD-4408", "customer_id": "C-1002", "items": ["NL-Lamp-Mini"], "paid": false, "payment_id": null, "shipped": false, "tracking": null, "status": "payment_failed", "promised": "2026-09-16", "today": "2026-09-17"}
+  ],
+  "tickets": [{"id": "T-501", "customer_id": "C-1001", "order_id": "ORD-4401", "subject": "Order has not arrived", "channel": "email"}],
+  "policy": {"late_delivery_credit": 25, "enterprise_replacement_after_days": 7, "refund_requires_approval": true},
+  "inventory": {"NL-Desk-Pro": 14, "NL-Lamp-Mini": 0},
+  "employees": [
+    {"id": "E-01", "name": "Sam Reid", "role": "AE", "system_access": ["crm"]},
+    {"id": "E-09", "name": "New hire Alex Ruiz", "role": "ops", "onboarding_complete": false}
+  ],
+  "competitors": [
+    {"name": "Lumenoak", "price": 249, "features": ["app", "warranty-3y"], "geo": ["US", "CA"], "launch": "Matter desk 2026-08", "positioning": "premium quiet luxury"},
+    {"name": "Gridwatt", "price": 179, "features": ["app", "solar-kit"], "geo": ["US", "EU"], "launch": "EU warehouse", "positioning": "efficiency first"},
+    {"name": "Noxa Home", "price": 129, "features": ["basic-app"], "geo": ["US"], "launch": "TikTok bundle", "positioning": "mass value"},
+    {"name": "Harbor Beam", "price": 299, "features": ["app", "b2b-portal", "sla"], "geo": ["US", "UK"], "launch": "facility SKU", "positioning": "workplace"},
+    {"name": "Pinevolt", "price": 199, "features": ["app", "refurb"], "geo": ["US"], "launch": "refurb line", "positioning": "circular"}
+  ],
+  "northlamp_offer": {"price": 219, "features": ["app", "warranty-2y", "b2b-portal"], "geo": ["US"], "positioning": "design-led mid premium"},
+  "financials": {
+    "Northlamp": [{"q": "Q4-25", "rev": 2.1, "gm": 0.41, "ebitda": 0.08, "fcf": 0.04}, {"q": "Q1-26", "rev": 2.3, "gm": 0.40, "ebitda": 0.07, "fcf": 0.01}, {"q": "Q2-26", "rev": 2.8, "gm": 0.44, "ebitda": 0.11, "fcf": 0.06}, {"q": "Q3-26", "rev": 2.6, "gm": 0.39, "ebitda": 0.05, "fcf": -0.02}],
+    "Lumenoak": [{"q": "Q4-25", "rev": 4.0, "gm": 0.48, "ebitda": 0.14, "fcf": 0.09}, {"q": "Q1-26", "rev": 4.1, "gm": 0.47, "ebitda": 0.13, "fcf": 0.08}, {"q": "Q2-26", "rev": 4.4, "gm": 0.46, "ebitda": 0.12, "fcf": 0.07}, {"q": "Q3-26", "rev": 4.6, "gm": 0.45, "ebitda": 0.12, "fcf": 0.07}],
+    "Gridwatt": [{"q": "Q4-25", "rev": 3.2, "gm": 0.36, "ebitda": 0.04, "fcf": 0.00}, {"q": "Q1-26", "rev": 3.5, "gm": 0.37, "ebitda": 0.05, "fcf": 0.01}, {"q": "Q2-26", "rev": 3.9, "gm": 0.38, "ebitda": 0.06, "fcf": 0.02}, {"q": "Q3-26", "rev": 4.2, "gm": 0.38, "ebitda": 0.06, "fcf": 0.02}]
+  },
+  "commentary": {"Northlamp": "Q3 inventory write-down after Mini stockout and prepaid freight spike.", "Lumenoak": "Stable mix, expanding CA retail.", "Gridwatt": "EU warehouse lifted volume, margin still thin."},
+  "sales_rows": [
+    {"month": "2026-03", "region": "NE", "product": "Desk-Pro", "units": 120, "revenue": 26280},
+    {"month": "2026-04", "region": "NE", "product": "Desk-Pro", "units": 118, "revenue": 25842},
+    {"month": "2026-05", "region": "NE", "product": "Desk-Pro", "units": 90, "revenue": 19710},
+    {"month": "2026-06", "region": "NE", "product": "Desk-Pro", "units": 88, "revenue": 19272},
+    {"month": "2026-07", "region": "NE", "product": "Desk-Pro", "units": 140, "revenue": 30660},
+    {"month": "2026-08", "region": "NE", "product": "Desk-Pro", "units": 155, "revenue": 33945},
+    {"month": "2026-03", "region": "West", "product": "Lamp-Mini", "units": 200, "revenue": 21800},
+    {"month": "2026-04", "region": "West", "product": "Lamp-Mini", "units": 210, "revenue": 22890},
+    {"month": "2026-05", "region": "West", "product": "Lamp-Mini", "units": 40, "revenue": 4360},
+    {"month": "2026-06", "region": "West", "product": "Lamp-Mini", "units": 35, "revenue": 3815},
+    {"month": "2026-07", "region": "West", "product": "Lamp-Mini", "units": 30, "revenue": 3270},
+    {"month": "2026-08", "region": "West", "product": "Lamp-Mini", "units": 28, "revenue": 3052}
+  ],
+  "research_sources": [
+    {"id": "S1", "type": "filing", "claim": "Northlamp Q3 revenue -7% QoQ", "verified": true},
+    {"id": "S2", "type": "press", "claim": "Desk category search interest rose 11% YoY", "verified": true},
+    {"id": "S3", "type": "blog", "claim": "All premium desk brands will 2x in 2027", "verified": false},
+    {"id": "S4", "type": "carrier", "claim": "West region parcel dwell +1.8 days in May", "verified": true}
+  ],
+  "contracts": [
+    {"id": "SUP-01", "supplier": "VoltForge", "expires": "2026-11-02", "auto_renew": true, "liability_cap": "unlimited", "standard": false, "note": "unlimited liability vs $2M cap policy"},
+    {"id": "SUP-02", "supplier": "Packwell", "expires": "2027-08-01", "auto_renew": false, "liability_cap": "2_million", "standard": true, "note": "in policy"},
+    {"id": "SUP-03", "supplier": "Nighthaul", "expires": "2026-10-20", "auto_renew": true, "liability_cap": "500k", "standard": false, "note": "cap below policy floor"}
+  ],
+  "legal_policy": {"renewal_watch_days": 90, "liability_cap_required": "2_million", "auto_renew_alert": true},
+  "campaigns": {"week": "2026-W37", "ads_spend": 18400, "ads_spend_prev": 15200, "roas": 2.1, "roas_prev": 2.8, "cvr": 0.018, "cvr_prev": 0.024, "leads": 61, "leads_prev": 74, "creative_winners": ["studio-still-08"], "creative_losers": ["ugc-rush-03"], "west_stockout": true},
+  "ops_week": {"revenue_actual": 118000, "revenue_target": 125000, "pipeline": 410000, "support_sev": ["T-501 late enterprise delivery"], "product_shipped": ["app dark mode"], "eng_done": ["session cookie patch queued"], "eng_late": ["inventory sync job"], "overdue": ["Mini restock PO"]},
+  "it_incident": {"host": "api-2", "symptoms": ["5xx spike 14:02", "session store timeouts"], "logs": ["14:02:11 ERROR redis: connection refused 10.0.4.8:6379", "14:02:18 WARN auth: sliding session write failed, cookie not rotated", "14:03:01 INFO kube: restart auth-session not approved"], "approved_actions": ["page_oncall", "read_logs"], "forbidden_until_approved": ["restart_service", "flush_redis"]},
+  "healthcare_admin": {"batch_id": "ADM-22", "records": [{"mrn_hash": "h9f2", "task": "insurance_verification", "status": "missing_payer_id", "phi_fields_present": false}, {"mrn_hash": "k3aa", "task": "referral_routing", "status": "ready", "phi_fields_present": false}], "allowed": ["document_organization", "admin_reporting", "routing"], "forbidden": ["diagnosis", "treatment", "prescribing"]},
+  "dataset": [{"day": 1, "defect_ppm": 210, "temp_c": 21.0, "line": "A"}, {"day": 2, "defect_ppm": 198, "temp_c": 21.2, "line": "A"}, {"day": 3, "defect_ppm": 205, "temp_c": 21.1, "line": "A"}, {"day": 4, "defect_ppm": 400, "temp_c": 26.8, "line": "A"}, {"day": 5, "defect_ppm": 412, "temp_c": 27.1, "line": "A"}, {"day": 6, "defect_ppm": 190, "temp_c": 20.9, "line": "B"}, {"day": 7, "defect_ppm": 188, "temp_c": 21.0, "line": "B"}],
+  "cad_spec": {"part": "lamp-collar", "inner_mm": 32, "wall_mm": 3, "height_mm": 18, "material": "6061-T6", "constraint": "must clear M4 socket"},
+  "qa_storefront": {"pages": ["home", "pdp", "cart", "discount", "checkout"], "bugs": [{"page": "discount", "severity": "high", "issue": "code SAVE10 applies twice"}, {"page": "checkout", "severity": "high", "issue": "Pay button enabled with empty shipping"}, {"page": "cart", "severity": "med", "issue": "qty stepper goes to 0 and hides line"}]},
+  "repo_bug": {"symptom": "users randomly logged out", "root_cause": "session cookie not rotated when redis write fails; empty cookie overwrites client", "files": ["auth/session.py", "tests/test_session.py"]}
+}
