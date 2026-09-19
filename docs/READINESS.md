@@ -17,6 +17,9 @@ Not-ready is the trigger to keep building. Do not ask for permission to make rea
 - `deploy.split` — true when deploy tip does not match control pin
 - `state_line` — one-line STATE for email/app without opening GitHub
 
+## Vercel Hobby note
+Cron must be **once per day** on Hobby (`0 14 * * *` UTC). The outer-loop agent still probes `/api/health` / `/api/tick` on its own schedule; Vercel cron is a backup tick only. Upgrade to Pro to restore sub-daily crons.
+
 ## Still blocking paper Kalshi path
 1. Push clean Fiveplane source to `ST3ELY1212-code/Kalshi_BetBot` (no secrets/node_modules/zip).
 2. Paper runner (no live orders) wired against open 15m crypto markets.
